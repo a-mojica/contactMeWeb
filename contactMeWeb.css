@@ -5,6 +5,17 @@
 * https://amojica.ch
 */
 
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridItemCentering {
+    justify-self: center;
+    align-self: center;
+}
+
 .contactMeWeb__grid {
     display: grid;
     grid-template-rows: repeat(6, auto);
