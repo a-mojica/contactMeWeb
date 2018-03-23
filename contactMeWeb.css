@@ -1,0 +1,134 @@
+/*!
+* contactMeWeb.css
+* Copyright (c) 2018 Antonio Mojica
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
+* https://amojica.ch
+*/
+
+.contactMeWeb__grid {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-template-areas: "FIRST LAST" "EMAIL EMAIL" "PHONE COMPANY" "MSG reCAP" "SUBMIT reCAP" "NOTE NOTE";
+}
+
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+    .contactMeWeb__grid {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "FIRST LAST reCAP" "EMAIL EMAIL reCAP" "PHONE COMPANY SUBMIT" "MSG MSG NOTE";
+    }
+    .contactMeWeb__grid__item {
+        margin-bottom: 0.125rem !important;
+    }
+    .contactMeWeb__grid__item:nth-of-type(6),
+    .contactMeWeb__grid__item:nth-of-type(8),
+    .contactMeWeb__grid__item:nth-of-type(9) {
+        margin-bottom: 0 !important;
+    }
+    .contactMeWeb__customReCaptcha {
+        height: 53px !important;
+        width: 61px !important;
+        transform: scale(0.38) !important;
+        -webkit-transform: scale(0.38) !important;
+    }
+    .contactMeWeb__alert {
+        margin-left: 0.25rem !important;
+    }
+}
+
+.contactMeWeb__grid__item {
+    margin-bottom: 0.375rem;
+}
+
+.contactMeWeb__grid__item:nth-of-type(1) {
+    grid-area: FIRST;
+}
+
+.contactMeWeb__grid__item:nth-of-type(2) {
+    grid-area: LAST;
+}
+
+.contactMeWeb__grid__item:nth-of-type(3) {
+    grid-area: EMAIL;
+}
+
+.contactMeWeb__grid__item:nth-of-type(4) {
+    grid-area: PHONE;
+}
+
+.contactMeWeb__grid__item:nth-of-type(5) {
+    grid-area: COMPANY;
+}
+
+.contactMeWeb__grid__item:nth-of-type(6) {
+    grid-area: MSG;
+}
+
+.contactMeWeb__grid__item:nth-of-type(7) {
+    grid-area: reCAP;
+}
+
+.contactMeWeb__grid__item:nth-of-type(8) {
+    grid-area: SUBMIT;
+}
+
+.contactMeWeb__grid__item:nth-of-type(9) {
+    grid-area: NOTE;
+}
+
+.contactMeWeb__grid__item__label {
+    margin-bottom: 0;
+}
+
+.contactMeWeb__grid__item__inputArea,
+.contactMeWeb__submit {
+    padding: 0.125rem 0.375rem;
+}
+
+.contactMeWeb__customReCaptcha {
+    height: 105px;
+    width: 120px;
+    transform: scale(0.77);
+    -webkit-transform: scale(0.77);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
+
+.contactMeWeb__alert {
+    padding: 0.125rem 0.375rem !important;
+    margin: 0;
+}
+
+.contactMeWeb__alert__close {
+    padding-right: 0.375rem !important;
+}
+
+/* OPTIONAL: for OnePageScroll styles */
+
+.contactMeWeb__grid__item__inputArea,
+.contactMeWeb__submit {
+    font-size: 1.75vh;
+}
+
+@media only screen and (min-height:991px) and (max-width: 767px) {
+    .contactMeWeb__grid__item__inputArea,
+    .contactMeWeb__submit {
+        font-size: 1.5vh;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+    .contactMeWeb__grid__item__inputArea,
+    .contactMeWeb__submit {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 575px) and (max-height: 450px) {
+    .contactMeWeb__grid__item__inputArea,
+    .contactMeWeb__submit {
+        font-size: 1.375vw;
+    }
+}
