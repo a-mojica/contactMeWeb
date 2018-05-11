@@ -5,6 +5,12 @@
 * Licensed under the MIT license - http://opensource.org/licenses/MIT
 */
 
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contactMeWeb {
     /* OPTIONAL: for fixed-bottom footer styles */
     margin-bottom: 35px;
