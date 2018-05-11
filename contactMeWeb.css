@@ -6,9 +6,24 @@
 */
 
 .centering {
+    /* from Handy.css */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.centeringAlt {
+    /* from Handy.css */
+    display: grid;
+    align-content: center;
+}
+
+.fullViewport {
+    /* from Handy.css */
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    /* "width: 100vw" alone causes horizontal overflow! */
 }
 
 .contactMeWeb {
