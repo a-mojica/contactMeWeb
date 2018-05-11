@@ -1,19 +1,13 @@
 /*!
 * contactMeWeb.css
 * Copyright (c) 2018 Antonio Mojica
-* Licensed under the MIT license - http://opensource.org/licenses/MIT
 * https://amojica.ch
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
 */
 
-.centering {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gridItemCentering {
-    justify-self: center;
-    align-self: center;
+.contactMeWeb {
+    /* OPTIONAL: for fixed-bottom footer styles */
+    margin-bottom: 35px;
 }
 
 .contactMeWeb__grid {
@@ -116,7 +110,7 @@
     padding-right: 0.375rem !important;
 }
 
-/* OPTIONAL: for OnePageScroll styles */
+/* OPTIONAL: for OnePageScroll styles 
 
 .contactMeWeb__grid__item__inputArea,
 .contactMeWeb__submit {
@@ -142,4 +136,4 @@
     .contactMeWeb__submit {
         font-size: 1.375vw;
     }
-}
+}*/
